@@ -1,0 +1,13 @@
+stages:
+- name: stage1
+  steps:
+  - runScriptConfig:
+      image: node:latest
+      shellScript: ./build.js
+- name: stage2
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: 'index.docker.io/tfiduccia/pipline-example: latest'
+timeout: 60
