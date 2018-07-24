@@ -9,5 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: 'index.docker.io/tfiduccia/pipline-example: latest'
+      tag: tfiduccia/pipline-example:latest
+      pushRemote: true
+      registry: index.docker.io
 timeout: 60
