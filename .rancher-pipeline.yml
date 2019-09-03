@@ -17,9 +17,7 @@ notification:
   recipients:
   - recipient: tani@rancher.com
     notifier: c-l8vnr:n-ww7p5
-  - recipient: vincent@rancher.com
-    notifier: c-l8vnr:n-ww7p5
-  - recipient: tani@gmail.com
+  - recipient: tanifiduccia@gmail.com
     notifier: c-l8vnr:n-ww7p5
   condition:
   - Success
