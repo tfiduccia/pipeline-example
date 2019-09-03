@@ -13,4 +13,15 @@ stages:
       pushRemote: true
       registry: index.docker.io
 timeout: 60
-notification: {}
+notification:
+  recipients:
+  - recipient: tani@rancher.com
+    notifier: c-l8vnr:n-ww7p5
+  - recipient: vincent@rancher.com
+    notifier: c-l8vnr:n-ww7p5
+  - recipient: tani@gmail.com
+    notifier: c-l8vnr:n-ww7p5
+  condition:
+  - Success
+  - Changed
+  - Failed
